@@ -1,0 +1,145 @@
+Sure! I'll walk you through both making the website mobile-responsive and setting it up for free hosting.
+
+
+---
+
+1. Making Your Website Mobile-Responsive
+
+Here's an updated version of the HTML code that includes responsive design:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Humming Bird Farm - Belize</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4fff4;
+      color: #333;
+    }
+    header {
+      background: #3a874f;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #2e703d;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #2e703d;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px #ccc;
+    }
+    footer {
+      background: #2e703d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+      nav a {
+        font-size: 14px;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Humming Bird Farm</h1>
+  <p>Organic farming, butterflies & animals in the heart of southern Belize</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#crops">What We Grow</a>
+  <a href="#animals">Animals</a>
+  <a href="#visit">Visit</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Humming Bird Farm is a peaceful organic farm nestled in the beautiful south of Belize. We grow fresh fruits and vegetables, raise animals, and even care for butterflies! Our goal is to create a sustainable and educational space for all ages.</p>
+</section>
+
+<section id="crops">
+  <h2>What We Grow</h2>
+  <div class="grid">
+    <div class="card">Bananas</div>
+    <div class="card">Mangoes</div>
+    <div class="card">Okra</div>
+    <div class="card">Hot Peppers</div>
+    <div class="card">Basil</div>
+    <div class="card">Papaya</div>
+  </div>
+</section>
+
+<section id="animals">
+  <h2>Our Animals & Butterflies</h2>
+  <p>We care for a variety of animals and raise butterflies to support natural pollination and local education programs.</p>
+  <div class="grid">
+    <div class="card">Butterflies</div>
+    <div class="card">Pigs</div>
+    <div class="card">Sheep</div>
+    <div class="card">Horses</div>
+    <div class="card">Chickens</div>
+    <div class="card">Turkeys</div>
+  </div>
+</section>
+
+<section id="visit">
+  <h2>Visit the Farm</h2>
+  <p>We welcome visitors for guided tours and hands-on experiences. Come explore our crops, meet the animals, and learn about our butterfly garden.</p>
+  <p><strong>Location:</strong> Southern Belize</p>
+  <p><strong>Hours:</strong> Monday to Saturday, 8am - 4pm</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:hummingbirdfarm@example.com">hummingbirdfarm@example.com</a></p>
+  <p>WhatsApp: +501-XXX-XXXX</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Humming Bird Farm, Belize. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
